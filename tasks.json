@@ -1,0 +1,23 @@
+[
+    {
+        "id": "T01",
+        "title": "Do homework",
+        "description": "Math exercises",
+        "status": "Pending",
+        "priority": 3
+    },
+    {
+        "id": "T02",
+        "title": "Buy groceries",
+        "description": "Milk and bread",
+        "status": "Done",
+        "priority": 2
+    },
+    {
+        "id": "T03",
+        "title": "Learn Python",
+        "description": "Practice functions",
+        "status": "Pending",
+        "priority": 5
+    }
+]
