@@ -87,20 +87,34 @@ def display_tasks(tasks):
         print("Task list is empty.")
         return
 
-    print("\n" + "-" * 100)
-    print(f"{'ID':<10}{'Title':<25}{'Description':<30}{'Status':<15}{'Priority':<10}")
-    print("-" * 100)
+    id_width = 10
+    title_width = 22
+    description_width = 28
+    status_width = 12
+    priority_width = 10
+
+    total_width = id_width + title_width + description_width + status_width + priority_width
+
+    print("\n" + "-" * total_width)
+    print(
+        f"{'ID':<{id_width}}"
+        f"{'Title':<{title_width}}"
+        f"{'Description':<{description_width}}"
+        f"{'Status':<{status_width}}"
+        f"{'Priority':<{priority_width}}"
+    )
+    print("-" * total_width)
 
     for task in tasks:
         print(
-            f"{task['id']:<10}"
-            f"{task['title']:<25}"
-            f"{task['description']:<30}"
-            f"{task['status']:<15}"
-            f"{task['priority']:<10}"
+            f"{task['id'][:id_width-1]:<{id_width}}"
+            f"{task['title'][:title_width-1]:<{title_width}}"
+            f"{task['description'][:description_width-1]:<{description_width}}"
+            f"{task['status'][:status_width-1]:<{status_width}}"
+            f"{str(task['priority'])[:priority_width-1]:<{priority_width}}"
         )
 
-    print("-" * 100)
+    print("-" * total_width)
 
 
 def search_task_by_id(tasks):
