@@ -1,3 +1,4 @@
 T01|Do homework|Math exercises|Pending|3
 T02|Buy groceries|Milk and bread|Done|2
 T03|Learn Python|Practice functions|Pending|5
+12345|Do excersise|running,swimming|Pending|2

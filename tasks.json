@@ -19,5 +19,26 @@
         "description": "Practice functions",
         "status": "Pending",
         "priority": 5
+    },
+    {
+        "id": "12345",
+        "title": "Do excersise",
+        "description": "running,swimming",
+        "status": "Pending",
+        "priority": 2
+    },
+    {
+        "id": "Playing volleyball",
+        "title": "PLAY",
+        "description": "funny",
+        "status": "Pending",
+        "priority": 2
+    },
+    {
+        "id": "3214",
+        "title": "Listening to music",
+        "description": "Jusstin Biebrer",
+        "status": "Done",
+        "priority": 4
     }
 ]
