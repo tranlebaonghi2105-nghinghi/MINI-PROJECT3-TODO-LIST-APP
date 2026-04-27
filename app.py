@@ -5,7 +5,12 @@ TXT_FILE = "tasks.txt"
 JSON_FILE = "tasks.json"
 
 
+def clear_screen():
+    os.system("cls")
+
+
 def display_menu():
+    clear_screen()
     print("\n" + "=" * 60)
     print("                TO-DO LIST MANAGEMENT")
     print("=" * 60)
@@ -87,34 +92,46 @@ def display_tasks(tasks):
         print("Task list is empty.")
         return
 
-    id_width = 10
-    title_width = 22
-    description_width = 28
-    status_width = 12
-    priority_width = 10
+    id_width = 8
+    title_width = 20
+    description_width = 25
+    status_width = 10
+    priority_width = 8
 
-    total_width = id_width + title_width + description_width + status_width + priority_width
-
-    print("\n" + "-" * total_width)
-    print(
-        f"{'ID':<{id_width}}"
-        f"{'Title':<{title_width}}"
-        f"{'Description':<{description_width}}"
-        f"{'Status':<{status_width}}"
-        f"{'Priority':<{priority_width}}"
+    border = (
+        "+"
+        + "-" * (id_width + 2)
+        + "+"
+        + "-" * (title_width + 2)
+        + "+"
+        + "-" * (description_width + 2)
+        + "+"
+        + "-" * (status_width + 2)
+        + "+"
+        + "-" * (priority_width + 2)
+        + "+"
     )
-    print("-" * total_width)
+
+    print("\n" + border)
+    print(
+        f"| {'ID':<{id_width}} "
+        f"| {'Title':<{title_width}} "
+        f"| {'Description':<{description_width}} "
+        f"| {'Status':<{status_width}} "
+        f"| {'Priority':<{priority_width}} |"
+    )
+    print(border)
 
     for task in tasks:
         print(
-            f"{task['id'][:id_width-1]:<{id_width}}"
-            f"{task['title'][:title_width-1]:<{title_width}}"
-            f"{task['description'][:description_width-1]:<{description_width}}"
-            f"{task['status'][:status_width-1]:<{status_width}}"
-            f"{str(task['priority'])[:priority_width-1]:<{priority_width}}"
+            f"| {task['id'][:id_width]:<{id_width}} "
+            f"| {task['title'][:title_width]:<{title_width}} "
+            f"| {task['description'][:description_width]:<{description_width}} "
+            f"| {task['status'][:status_width]:<{status_width}} "
+            f"| {str(task['priority'])[:priority_width]:<{priority_width}} |"
         )
 
-    print("-" * total_width)
+    print(border)
 
 
 def search_task_by_id(tasks):
@@ -270,6 +287,8 @@ def main():
             break
         else:
             print("Invalid choice. Please enter a number from 0 to 9.")
+
+        input("\nPress Enter to continue...")
 
 
 if __name__ == "__main__":

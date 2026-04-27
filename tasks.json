@@ -1,44 +1,30 @@
 [
     {
         "id": "T01",
-        "title": "Do homework",
-        "description": "Math exercises",
-        "status": "Pending",
-        "priority": 3
-    },
-    {
-        "id": "T02",
         "title": "Buy groceries",
         "description": "Milk and bread",
         "status": "Done",
         "priority": 2
     },
     {
-        "id": "T03",
-        "title": "Learn Python",
-        "description": "Practice functions",
-        "status": "Pending",
-        "priority": 5
+        "id": "T02",
+        "title": "Dacing",
+        "description": "Dacing in the dark",
+        "status": "Done",
+        "priority": 3
     },
     {
-        "id": "12345",
+        "id": "T03",
         "title": "Do excersise",
         "description": "running,swimming",
         "status": "Pending",
         "priority": 2
     },
     {
-        "id": "Playing volleyball",
-        "title": "PLAY",
-        "description": "funny",
+        "id": "T04",
+        "title": "Do homework",
+        "description": "Math exercises",
         "status": "Pending",
-        "priority": 2
-    },
-    {
-        "id": "3214",
-        "title": "Listening to music",
-        "description": "Jusstin Biebrer",
-        "status": "Done",
-        "priority": 4
+        "priority": 3
     }
 ]
