@@ -1,10 +1,24 @@
 [
     {
+        "id": "T09",
+        "title": "bicyle",
+        "description": "along the Huong river",
+        "status": "Pending",
+        "priority": 3
+    },
+    {
         "id": "T01",
         "title": "Buy groceries",
         "description": "Milk and bread",
         "status": "Done",
         "priority": 2
+    },
+    {
+        "id": "T07",
+        "title": "Cooking",
+        "description": "Chicken noodle soup",
+        "status": "Pending",
+        "priority": 3
     },
     {
         "id": "T02",
