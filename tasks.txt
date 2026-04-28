@@ -1,4 +1,6 @@
+T09|bicyle|along the Huong river|Pending|3
 T01|Buy groceries|Milk and bread|Done|2
+T07|Cooking|Chicken noodle soup|Pending|3
 T02|Dacing|Dacing in the dark|Done|3
 T03|Do excersise|running,swimming|Pending|2
 T04|Do homework|Math exercises|Pending|3
